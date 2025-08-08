@@ -26,5 +26,6 @@
             <version>${auth.application.version}</version>
         </dependency>
 
+
     </dependencies>
 </project>

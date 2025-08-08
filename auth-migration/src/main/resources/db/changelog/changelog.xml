@@ -10,4 +10,22 @@
                  path="classpath:/db/sources/create_order_table.sql"
                  relativeToChangelogFile="false"/>
     </changeSet>
+
+    <changeSet author="tuyen@luong" id="rename_user_table" onValidationFail="MARK_RAN">
+        <sqlFile dbms="mysql"
+                 path="classpath:/db/sources/rename_user_table.sql"
+                 relativeToChangelogFile="false"/>
+    </changeSet>
+
+    <changeSet author="tuyen@luong" id="add_columns_user_table" onValidationFail="MARK_RAN">
+        <sqlFile dbms="mysql"
+                 path="classpath:/db/sources/add_columns_user_table.sql"
+                 relativeToChangelogFile="false"/>
+    </changeSet>
+
+    <changeSet author="tuyen@luong" id="create_users_table" onValidationFail="MARK_RAN">
+        <sqlFile dbms="mysql"
+                 path="classpath:/db/sources/create_users_table.sql"
+                 relativeToChangelogFile="false"/>
+    </changeSet>
 </databaseChangeLog>

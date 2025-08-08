@@ -15,27 +15,29 @@
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
+        <auth.common.version>0.0.1-SNAPSHOT</auth.common.version>
         <auth.application.version>0.0.1-SNAPSHOT</auth.application.version>
+        <auth.infrastructure.version>0.0.1-SNAPSHOT</auth.infrastructure.version>
     </properties>
 
     <dependencies>
-        <!-- Spring Boot Web for controllers -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-
-        <!-- Spring Security (for auth flow) -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
-
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
         <dependency>
             <groupId>vn.test</groupId>
-            <artifactId>auth-application</artifactId>
-            <version>${auth.application.version}</version>
+            <artifactId>auth-common</artifactId>
+            <version>${auth.common.version}</version>
         </dependency>
     </dependencies>
 
