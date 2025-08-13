@@ -14,8 +14,6 @@ import vn.test.auth.application.dto.CreateUserDTO;
 import vn.test.auth.application.mapper.UserReqResMapper;
 import vn.test.auth.business.domain.Users;
 import vn.test.auth.business.services.UsersService;
-import vn.test.auth.common.dto.LoginUserDto;
-import vn.test.auth.common.dto.UsersDto;
 
 @Slf4j
 @RestController

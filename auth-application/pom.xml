@@ -46,7 +46,7 @@
             <optional>true</optional>
         </dependency>
         <dependency>
-            <groupId>com.prepro</groupId>
+            <groupId>com.vn</groupId>
             <artifactId>common-core</artifactId>
         </dependency>
     </dependencies>

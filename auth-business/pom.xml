@@ -35,9 +35,8 @@
             <optional>true</optional>
         </dependency>
         <dependency>
-            <groupId>vn.test</groupId>
-            <artifactId>auth-common</artifactId>
-            <version>${auth.common.version}</version>
+            <groupId>com.vn</groupId>
+            <artifactId>common-core</artifactId>
         </dependency>
     </dependencies>
 

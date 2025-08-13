@@ -26,7 +26,6 @@
         <module>auth-migration</module>
 		<module>auth-application</module>
 		<module>auth-business</module>
-		<module>auth-common</module>
 		<module>auth-infrastructure</module>
 		<module>auth-worker</module>
 	</modules>
@@ -43,7 +42,7 @@
 		<mysql.version>8.4.0</mysql.version>
 		<lombok.version>1.18.30</lombok.version>
 		<mapstruct.version>1.4.2.Final</mapstruct.version>
-		<common.version>1.0-SNAPSHOT</common.version>
+		<common.version>0.0.1-SNAPSHOT</common.version>
 		<jakarta.validation.version>3.0.2</jakarta.validation.version>
 	</properties>
 	<dependencyManagement>
@@ -75,7 +74,7 @@
 				<version>${jakarta.validation.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.prepro</groupId>
+				<groupId>com.vn</groupId>
 				<artifactId>common-core</artifactId>
 				<version>${common.version}</version>
 			</dependency>
