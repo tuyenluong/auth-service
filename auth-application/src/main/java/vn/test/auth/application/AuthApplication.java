@@ -5,9 +5,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan(basePackages = "vn/test/auth/business/*")
+@ComponentScan(basePackages = "vn/test/auth/*")
 public class AuthApplication {
-
 
     public static void main(String[] args) {
         SpringApplication.run(AuthApplication.class, args);

@@ -19,6 +19,7 @@
         <auth.infrastructure.version>0.0.1-SNAPSHOT</auth.infrastructure.version>
         <auth.common.version>0.0.1-SNAPSHOT</auth.common.version>
         <auth.business.version>0.0.1-SNAPSHOT</auth.business.version>
+
     </properties>
 
     <dependencies>
@@ -26,16 +27,6 @@
             <groupId>vn.test</groupId>
             <artifactId>auth-business</artifactId>
             <version>${auth.business.version}</version>
-        </dependency>
-<!--        <dependency>-->
-<!--            <groupId>vn.test</groupId>-->
-<!--            <artifactId>auth-infrastructure</artifactId>-->
-<!--            <version>${auth.infrastructure.version}</version>-->
-<!--        </dependency>-->
-        <dependency>
-            <groupId>vn.test</groupId>
-            <artifactId>auth-common</artifactId>
-            <version>${auth.common.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -53,6 +44,10 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>com.prepro</groupId>
+            <artifactId>common-core</artifactId>
         </dependency>
     </dependencies>
 

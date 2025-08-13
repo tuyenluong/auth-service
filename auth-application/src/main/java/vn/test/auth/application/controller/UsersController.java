@@ -20,7 +20,6 @@ import vn.test.auth.common.dto.UsersDto;
 @Slf4j
 @RestController
 @RequestMapping("/v1/users")
-//@RequiredArgsConstructor
 public class UsersController {
 
     private final UsersService usersService;
@@ -31,21 +30,21 @@ public class UsersController {
         this.userReqResMapper = userReqResMapper;
     }
 
-    @PostMapping("/login")
-    public ResponseEntity<LoginUserDto> login(UsersDto userDto){
-
-        usersService.login(userDto);
-
-        HttpStatus status = HttpStatus.OK;
-
-        LoginUserDto loginDto = new LoginUserDto();
-
-        loginDto.setEmail("demo@email.com");
-        loginDto.setStatusCode(status.toString());
-        loginDto.setMessage("Sucessful");
-
-        return ResponseEntity.status(status).body(loginDto);
-    }
+//    @PostMapping("/login")
+//    public ResponseEntity<LoginUserDto> login(UsersDto userDto){
+//
+//        usersService.login(userDto);
+//
+//        HttpStatus status = HttpStatus.OK;
+//
+//        LoginUserDto loginDto = new LoginUserDto();
+//
+//        loginDto.setEmail("demo@email.com");
+//        loginDto.setStatusCode(status.toString());
+//        loginDto.setMessage("Sucessful");
+//
+//        return ResponseEntity.status(status).body(loginDto);
+//    }
 
 
     @PostMapping("/create")

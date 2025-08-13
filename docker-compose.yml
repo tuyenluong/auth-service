@@ -12,7 +12,7 @@ services:
     ports:
       - "3306:3306" # Expose MySQL port
     volumes:
-      - mysql_data:/var/lib/mysql
+      - ./mysql_volume_backup:/var/lib/mysql
     networks:
       - keycloak-network
 
