@@ -17,7 +17,7 @@ import vn.test.auth.business.services.UsersService;
 
 @Slf4j
 @RestController
-@RequestMapping("/v1/users")
+@RequestMapping("/v1/auth")
 public class UsersController {
 
     private final UsersService usersService;
